@@ -1,0 +1,117 @@
+/* Nav-bar Section */
+
+.ct-nav{
+    display: flex;
+    justify-content: center;
+}
+.ct-nav img{
+    width: 25%;
+    margin-left: -75%;
+    margin-top: 1vw;
+}
+#horizontal-list{
+    min-width: 55vw;
+    list-style: none;
+    padding-top: 6vh;
+    margin-left: 50%;
+}
+#horizontal-list li, #horizontal-list a{
+    display: inline;
+    text-decoration: none;
+    padding: 0.5vw;
+    color: black;
+}
+#horizontal-list a:nth-last-child(1){
+    border: 2px solid blue;
+    border-radius: 10px;
+    margin-right:0.2vw;
+}
+
+/* Header Section */
+#header-text{
+    padding: 2vw;
+}
+.header-image{
+    width: 85%;
+    max-width: 100%;
+}
+
+/* Middle Section */
+#middle-text{
+    text-align: center;
+    padding: 10vh;
+}
+#middle-text h2{
+    padding: 1.5vw;
+}
+#mario-image{
+    width: 75%;
+    max-width: 75%;
+    margin-left: 3vw;
+}
+#btn-home{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+
+/* Features Section */
+#vader-image, #vito-image{
+    display: block;
+    margin: auto;
+    margin-bottom: 10vh;
+    width: 80%;
+    height: 60%;
+}
+#goku-image{
+    display: block;
+    margin: auto;
+    margin-bottom: 10vh;
+    width: 80%;
+    height: 40%;
+}
+#features-section{
+    margin: 8vh;
+    text-align: center;
+}
+
+/* Community Section */
+#batman-image{
+    width: 100%;
+}
+#btn-home2{
+    margin-left: 100px;
+    margin-right: 50px;
+}
+#text1{
+    text-align: center;
+}
+
+/* Footer Section */
+.footer-text-flex{
+    display: flex;
+    flex-direction: column;
+    margin-top: 3vw;
+    width: 300px;
+    text-align: center;
+}
+#footer-logo{
+    width: 80%;
+    max-width: 100%;
+    margin-top: 1vw;
+}
+#footer{
+    border-top: 3px solid black;
+    margin-top: 20%;
+}
+
+/* Sign In Page */
+#password-field{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+/* Sign Up Page */
+#password-field{
+    padding-bottom: 15px;
+    padding-top: 15px;
+}

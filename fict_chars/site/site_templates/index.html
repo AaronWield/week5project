@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block content %}
+{% with messages = get_flashed_messages(with_categories = true) %}
+    {% if messages %}
+        {% for cat, msg in messages  %}
+            {% if cat == 'user-created' or cat == 'auth-success' %}
+            <div class="alert alert-success alert-dismissible fade show" role="alert">
+                {{ msg }}
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endif %}
+        {% endfor %}
+    {% endif %}
+{% endwith %}
+    <br>
+    <div class="container">
+        <header class="row">
+            <div class="col-12 col-md-6" id ="header-text">
+                <h2>We all love fictional characters! View our open-source database and show off your knowledge.</h2>
+                    <br>
+                <h5>Join fellow lovers of fiction and discuss your favorites!</h5>
+                    <br>
+                <div>
+                    <button id="btn-home" class="btn btn-primary">Explore Database</button>
+                    <a href="{{ url_for('auth.signup') }}">
+                        <button id="btn-home1" class="btn btn-primary">Sign Up</button>
+                    </a>
+                </div>
+            </div>
+<!-- Header image -->
+            <div class="col-12 col-md-6">
+                <img src="../../static/images/duel.png" alt="hero image" class="header-image">
+            </div>
+        </header>
+<!-- Middle Section -->
+        <section class="row">
+            <div class="col-12" id="middle-text">
+                <h2>Join Our Community!</h2>
+                <p>Sign up, meet other fans, learn, add to existing characters, and share your own story!</p>
+                <br>
+                <img src="../../static/images/mariobros.png" alt="Super Mario" id="mario-image">
+            </div>
+        </section>
+<!-- Features Section -->
+        <section class="row" id="features-section">
+            <div class="col-12 col-md-4">
+                <img src="../../static/images/vader-full.png" alt="Vader" id="vader-image">
+                <h4>Darth Vader</h4>
+                <p>Arguably the most iconic character in cinematic history. Born Anakin Skywalker, the hope of the Jedi.
+                    Seduced by the dark side and the Emperor, Anakin was turned and became Darth Vader, the most feared person in the galaxy.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="../../static/images/goku.png" alt="Goku" id="goku-image">
+                <h4>Goku</h4>
+                <p>A Saiyan, Goku arrives on Earth and trains to become the planet's greatest fighter and defends
+                    Earth from numerous villains bent on destruction. A good-hearted, eccentric hero.
+                </p>
+            </div>
+            <div class="col-12 col-md-4">
+                <img src="../../static/images/don-vito.png" alt="Godfather" id="vito-image">
+                <h4>Don Vito Corleone</h4>
+                <p>Consistently ranked as one of the greatest films of all tme, The Godfather contains numerous excellent fictional characters.
+                    The patriarch of the Corleone family, Vito, portrayed by Marlon Brando.
+                </p>
+            </div>
+        </section>
+<!-- Community Section -->
+    <br><br>    
+    <section class="row">
+            <div class="col-12 col-md-6">
+                <img src="../../static/images/batman.png" alt="Batman Image" id="batman-image">
+            </div>
+            <div class="col-12 col-md-6" id="text1" >
+                <br><br><br><br><br><br><h4>Talk with like-minded fiction lovers.</h4>
+                <p>
+                    Talk with others around the world about the best characters in fiction.
+                    Hop in our Slack channel and give a star to the project on Github!
+                </p>
+                <div>
+                    <button id="btn-home2" class="btn btn-primary">View on Github</button>
+                    <button class="btn btn-primary">Join Our Slack Channel!</button>
+                </div>
+            </div>
+        </section>
+<!-- Footer Section -->
+    <footer class="row" id="footer">
+        <div class="col-2 col-md-2">
+            <img src="../../static/images/spyro.png" alt="CD Logo" id="footer-logo">
+
+        </div>
+        <div class="col-2 col-md-2">
+
+        </div>
+        <div class="col-2 col-md-2">
+            <div class="footer-text-flex">
+                <h4>Database</h4>
+                <p>The Fictional Character Database Project</p>
+                <p>Donate</p>
+                <p>Spread the Word</p>
+                <p>Our Success</p>
+            </div>
+        </div>
+        <div class="col-2 col-md-2">
+        </div>
+        <div class="col-2 col-md-2">
+        </div>
+        <div class="col-2 col-md-2">
+            <img src="../../static/images/joker.png" alt="CD Logo" id="footer-logo">
+        </div>
+        
+    </footer>
+    </div>
+{% endblock content %}
